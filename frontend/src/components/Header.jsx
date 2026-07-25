@@ -1,13 +1,20 @@
 import React from "react";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
+
 // Importing icons from react-icons
 const Header = () => {
+   const navigate = useNavigate();
+
+  const root = () => navigate("/");
+  const about = () => navigate("/about");
+
   return (
     <header className="header">
       <div className="header-container">
 
         {/* School Logo */}
-        <a href="/" className="school-logo">
+        <a onClick={root} className="school-logo">
           <div className="logo-icon">
             🎓
           </div>
@@ -20,29 +27,29 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="navbar">
-          <a href="/" className="nav-link active">
+          <a onClick={root} className="nav-link active">
             Home
           </a>
 
-          <a href="/about" className="nav-link">
+          <a onClick={about} className="nav-link">
             About Us
           </a>
 
-          <a href="/academics" className="nav-link">
+          <a onClick={() => navigate("academics")} className="nav-link">
             Academics
           </a>
 
-          <a href="/admissions" className="nav-link">
+          <a onClick={() => navigate("admissions")} className="nav-link">
             Admissions
           </a>
 
-          <a href="/contact" className="nav-link">
+          <a onClick={() => navigate("contact")} className="nav-link">
             Contact Us
           </a>
         </nav>
 
         {/* Portal Login */}
-        <a href="/login" className="login-button">
+        <a onClick={() => navigate("/login")} className="login-button">
           <span className="user-icon">♙</span>
           Portal Login
         </a>
