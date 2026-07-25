@@ -8,6 +8,7 @@ const Header = () => {
 
   const root = () => navigate("/");
   const about = () => navigate("/about");
+  const academics = () => navigate("/academics"); 
 
   return (
     <header className="header">
@@ -35,7 +36,7 @@ const Header = () => {
             About Us
           </a>
 
-          <a onClick={() => navigate("academics")} className="nav-link">
+          <a onClick={academics} className="nav-link">
             Academics
           </a>
 

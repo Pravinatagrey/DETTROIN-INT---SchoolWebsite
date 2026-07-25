@@ -23,8 +23,7 @@ const AboutSection = () => {
         </p>
       </div>
     </section>
-
-    <div className="mission-vision-container">
+    <section className="mission-vision-container">
       <div className="card mission-card">
         <h2 className="card-title">🎯 Our Mission</h2>
         <p className="card-text">
@@ -41,7 +40,7 @@ const AboutSection = () => {
           — where children discover their unique voice and are trusted to use it.
         </p>
       </div>
-      </div>
+      </section>
     </>
   );
 };

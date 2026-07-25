@@ -1,0 +1,251 @@
+.academics {
+  background: #1c1c5b;
+  color: #fff;
+  padding: 110px 0;
+}
+
+.academics-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.academics-tag {
+  display: inline-block;
+  color: #19d4ff;
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.academics-title {
+  max-width: 1050px;
+  font-size: 2rem;
+  line-height: 1.08;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #f8f3eb;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #ffb07b;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.academics-description {
+  max-width: 820px;
+  font-size: 1.75rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1200px) {
+  .about-title {
+    font-size: 4rem;
+  }
+
+  .academics-description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .academics {
+    padding: 70px 0;
+  }
+
+  .academics-title {
+    font-size: 2.7rem;
+  }
+
+  .academics-description {
+    font-size: 1.1rem;
+  }
+
+  .academics-tag {
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .academics-title {
+    font-size: 2.2rem;
+  }
+
+  .academics-description {
+    font-size: 1rem;
+  }
+}
+
+ .stages-container {
+          min-height: 100vh;
+          background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%);
+          padding: 3rem 2rem;
+          font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .stages-header {
+          text-align: center;
+          margin-bottom: 3.5rem;
+        }
+
+        .main-title {
+          font-size: 3rem;
+          font-weight: 800;
+          letter-spacing: 4px;
+          color: #0b2b44;
+          text-transform: uppercase;
+          margin-bottom: 0.25rem;
+          background: linear-gradient(135deg, #0b2b44 0%, #1a5a8c 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .subtitle {
+          font-size: 1.3rem;
+          color: #2c3e50;
+          font-weight: 300;
+          letter-spacing: 1px;
+          border-bottom: 3px solid #2a7de1;
+          display: inline-block;
+          padding-bottom: 0.5rem;
+        }
+
+        .stages-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 2rem;
+          max-width: 1200px;
+          width: 100%;
+        }
+
+        .stage-card {
+          background: rgba(255, 255, 255, 0.9);
+          backdrop-filter: blur(4px);
+          border-radius: 28px;
+          padding: 2rem 1.8rem 2.2rem;
+          box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.15);
+          transition: all 0.3s ease;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .stage-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 30px 50px -14px rgba(0, 0, 0, 0.25);
+          background: rgba(255, 255, 255, 0.98);
+        }
+
+        .stage-number {
+          position: absolute;
+          top: -14px;
+          right: 20px;
+          background: #2a7de1;
+          color: white;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+          font-weight: 700;
+          box-shadow: 0 4px 12px rgba(42, 125, 225, 0.4);
+        }
+
+        .stage-card:nth-child(2) .stage-number { background: #e67e22; }
+        .stage-card:nth-child(3) .stage-number { background: #27ae60; }
+        .stage-card:nth-child(4) .stage-number { background: #8e44ad; }
+
+        .stage-name {
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: #0b2b44;
+          margin: 0.5rem 0 0.2rem 0;
+        }
+
+        .stage-grades {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #2a7de1;
+          background: rgba(42, 125, 225, 0.1);
+          padding: 0.25rem 0.8rem;
+          border-radius: 30px;
+          display: inline-block;
+          margin-bottom: 1.2rem;
+          letter-spacing: 0.5px;
+        }
+
+        .stage-card:nth-child(2) .stage-grades { color: #d35400; background: rgba(214, 84, 0, 0.08); }
+        .stage-card:nth-child(3) .stage-grades { color: #1e8449; background: rgba(30, 132, 73, 0.08); }
+        .stage-card:nth-child(4) .stage-grades { color: #6c3483; background: rgba(108, 52, 131, 0.08); }
+
+        .stage-features {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          flex-grow: 1;
+        }
+
+        .stage-features li {
+          padding: 0.5rem 0 0.5rem 1.8rem;
+          position: relative;
+          font-size: 1rem;
+          color: #1e2b3c;
+          line-height: 1.5;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .stage-features li:last-child {
+          border-bottom: none;
+        }
+
+        .stage-features li::before {
+          content: "✦";
+          position: absolute;
+          left: 0;
+          color: #2a7de1;
+          font-size: 1rem;
+        }
+
+        .stage-card:nth-child(2) .stage-features li::before { color: #e67e22; }
+        .stage-card:nth-child(3) .stage-features li::before { color: #27ae60; }
+        .stage-card:nth-child(4) .stage-features li::before { color: #8e44ad; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .main-title {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+          }
+          .subtitle {
+            font-size: 1rem;
+          }
+          .stages-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+        @media (max-width: 500px) {
+          .stages-grid {
+            grid-template-columns: 1fr;
+          }
+          .stage-card {
+            padding: 1.5rem;
+          }
+          .main-title {
+            font-size: 1.8rem;
+          }
+        }
