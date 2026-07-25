@@ -6,6 +6,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Academics from './pages/Academic';
 import Admissions from './pages/Admission';
+import Conntact from './pages/Contact';
 function App() {
   return (
 
@@ -16,7 +17,7 @@ function App() {
        <Route path="/contact" element={<Contact />} />
        <Route path="/academics" element={<Academics />} />
         <Route path="/admissions" element={<Admissions />} />
-       
+       <Route path="/contact" element={<Conntact />} />
         </Routes>
        
     
