@@ -29,7 +29,7 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="navbar">
-          <a onClick={root} className="nav-link active">
+          <a onClick={root} className="nav-link">
             Home
           </a>
 
