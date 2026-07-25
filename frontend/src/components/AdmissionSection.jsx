@@ -7,19 +7,18 @@ const AdmissionSection = () => {
         <span className="admission-tag">ADMISSION 2026-27</span>
 
         <h1 className="admission-title">
-          A school built on{" "}
-          <span className="highlight">love, learning</span>
-          <br />
-          and endless possibilities.
+          Begin the {" "}
+          <span className="highlight">Aksharaa </span>
+            journey for your child today.
         </h1>
 
         <p className="admission-description">
-          Since 2008, Aksharaa has been a home for curious minds in Aligarh.
-          We believe that when you get the child right — the grades, the
-          college, the career all follow.
+           Limited seats across grades. Submit an inquiry below — 
+        our admissions team will reach out within one working day.
         </p>
       </div>
     </section>
+    
   );
 };
 
