@@ -1,7 +1,33 @@
 import React from "react";
 import "./HomePage1.css";
-
+// Image URL
 const imageUrl = "https://pavnaschoolaligarh.com/wp-content/uploads/2026/04/Rectangle-1-3.webp";
+
+// Statistics data
+const stats = [
+  {
+    number: "1200+",
+    title: "HAPPY STUDENTS",
+  },
+  {
+    number: "85+",
+    title: "EXPERT TEACHERS",
+  },
+  {
+    number: "250+",
+    title: "EDUCATORS"
+  },
+  {
+    number: "18",
+    title: "YEARS OF EXCELLENCE",
+  },
+  {
+    number: "42+",
+    title: "NATIONAL AWARDS",
+  },
+];
+
+
 
 const HomePage1 = () => {
   return (
@@ -56,7 +82,22 @@ const HomePage1 = () => {
           </div>
         </div>
       </div>
-    </section></>
+    </section>
+    <section className="impact">
+       <h3 className="impact-heading">Impact of the Aksharaa Legacy</h3>
+
+      <div className="marquee">
+        <div className="marquee-content">
+          {[...stats, ...stats].map((item, index) => (
+            <div className="stat-card" key={index}>
+              <h2>{item.number}</h2>
+              <p>{item.title}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    </>
   );
 };
 
