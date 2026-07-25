@@ -1,12 +1,12 @@
 import React from "react";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Academics from '../components/AcademicSection';
-export default function Academic() {
+import Admission from '../components/AdmissionSection';
+export default function Admissions() {
   return (
     <>
       <Header />
-       <Academics />
+       <Admission />
       <Footer />
     </>
 )}

@@ -1,0 +1,84 @@
+.admission {
+  background: #1c1c5b;
+  color: #fff;
+  padding: 110px 0;
+}
+
+.admission-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.admission-tag {
+  display: inline-block;
+  color: #19d4ff;
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.admission-title {
+  max-width: 1050px;
+  font-size: 2rem;
+  line-height: 1.08;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  color: #f8f3eb;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #ffb07b;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.admission-description {
+  max-width: 820px;
+  font-size: 1.75rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1200px) {
+  .admission-title {
+    font-size: 4rem;
+  }
+
+  .admission-description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission {
+    padding: 70px 0;
+  }
+
+  .admission-title {
+    font-size: 2.7rem;
+  }
+
+  .admission-description {
+    font-size: 1.1rem;
+  }
+
+  .admission-tag {
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-title {
+    font-size: 2.2rem;
+  }
+
+  .admission-description {
+    font-size: 1rem;
+  }
+}
